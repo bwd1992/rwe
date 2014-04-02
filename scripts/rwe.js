@@ -2,7 +2,13 @@ $(document).ready(function () {
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
-$('.pagewrap').height($(document).height());
+$(".navbar").hover(function() {
+    $(this).find('.logo').slideDown(900);
+}, function() {
+    $(this).find('.logo').slideUp(900);
+});
+
+$(".logo").hide();
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
