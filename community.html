@@ -20,46 +20,63 @@
 	<body>
 
 		<!-- HEADING -->
-		<div class="navbar navbar-fixed-top">
-			<div class="container">
-				<div class="logo pull-left">
+		<div class="nav-bar">
+			<div class="nav-wrap">
+				<div class="navbar" role="navigation">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<div class="bar">
 
-				</div>
-				<div class="navbar-right">
-					<li >
-						<a>Register</a>
-					</li>
-					<li >
-						| <a>Sign In</a>
-					</li>
+							</div>
+							<div class="nav-logo" >
+								<a href="index.html"> <img src="img/logo-small.png" alt="logo" class="center-block"/></a>
+							</div>
+						</div>
+						<div class="navbar-collapse collapse">
+							<ul class="nav navbar-nav">
+								<li class="active">
+									<a href="profile.html">Profile</a>
+								</li>
+								<li>
+									<a href="library.html">Library</a>
+								</li>
+								<li>
+									<a href="creator.html">Creator</a>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Community<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="community.html">Top Stories</a>
+										</li>
+										<li>
+											<a href="#"><strike>News Feed</strike></a>
+										</li>
+										<li>
+											<a href="#"><strike>Member Profiles</strike></a>
+										</li>
 
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="subwrap">
-			<div class="container">
-				<div class="sub">
-
-				</div>
-			</div>
+		<div class="subwrap" data-stellar-background-ratio="0.2">
+			<img src="img/logo.png" alt="logo" class="center-block" height="200"/>
 		</div>
-		<div class="navbar">
+		<div class="log-in">
 			<div class="container">
-				<ul class="nav navbar-nav">
-					<li >
-						<a href="index.html">Home</a>
-					</li>
-					<li >
-						<a href="profile.html">Profile</a>
-					</li>
-					<li >
-						<a href="#">Community</a>
-					</li>
-					<li >
-						<a href="creator.html">Creator</a>
-					</li>
-				</ul>
+				<a>Register</a> | <a>Log In</a>
 			</div>
 		</div>
 
@@ -109,10 +126,11 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<!-- /CONTENT -->
 
-			<!-- /CONTENT -->
-
-			<!-- FOOTER -->
+		<!-- FOOTER -->
+		<div class="footer"  data-stellar-background-ratio="0.2">
 			<div class="container">
 				<hr />
 				<p>
@@ -122,6 +140,7 @@
 		</div>
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="scripts/jquery.stellar.min.js"></script>
 		<script src="scripts/bootstrap.js"></script>
 		<script src="scripts/rwe.js"></script>
 	</body>
